@@ -1,9 +1,43 @@
 <!DOCTYPE html>
+
 <html>
 
 <meta charset="utf-8">
 
+
 <head>
+  <style type="text/css">
+    label {
+      font-size: x-large;
+    }
+
+    button {
+      padding: 7px 19px;
+      color: #333;
+      font-size: x-large;
+      border-radius: 5px;
+      border: 1px solid #666;
+    }
+
+    input {
+      width: 99%;
+      height: 40%;
+      font-size: x-large;
+      padding: 6px 0 4px 10px;
+      border: 1px solid #cecece;
+      background: #F6F6f6;
+      border-radius: 8px;
+    }
+
+    textarea {
+      width: 99%;
+      font-size:x-large;
+      padding: 6px 0 4px 10px;
+      border: 1px solid #cecece;
+      background: #F6F6f6;
+      border-radius: 8px;
+    }
+  </style>
   <script>
     /*
  CryptoJS v3.1.2
@@ -118,20 +152,20 @@
   <br>
   <input type="password" id="pass" name="pass" rows="1" cols="50"></input>
 
-  <br>
+  <br><br>
   <label>Encrypted</label>
   <br>
   <textarea id="encoded" name="encoded" rows="4" cols="50">Enter encoded text here...</textarea>
 
-  <br>
+  <br><br>
   <button id="swap" type="button" onclick="swap()">Swap</button>
 
-  <br>
+  <br><br>
   <label>Decrypted</label>
   <br>
   <textarea id="decoded" name="decoded" rows="4" cols="50">Enter decoded text here...</textarea>
 
-  <br>
+  <br><br>
   <button id="decode" type="button" onclick="decode()">Decode</button>
   <button id="encode" type="button" onclick="encode()">Encode</button>
   <button id="save" type="button" onclick="save()">Save</button>
